@@ -43,7 +43,7 @@ describe("Object creator", function() {
 
 	//for this last test, even though the test result matches with my expected result, it doesn't pass (I even copied-pasted).
 	//I'm guessing this is because of the function?
-		it("returns an array with key-value pairs from an array of nested key-value pairs", function() {
+	it("returns an array with key-value pairs from an array of nested key-value pairs", function() {
 		expect(_.object([["first", 1], ["objectMethod", function () { return 123;}], ["bool", true], ["objArray", [1,2,3]]])).toBe(
 				{ first: 1, objectMethod: Function, bool: true, objArray: [ 1, 2, 3 ] });
 	});
