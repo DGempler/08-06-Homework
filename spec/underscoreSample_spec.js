@@ -21,7 +21,7 @@ describe("Object creator", function() {
 		expect(_.object([],["one", "two", "three", "four"])).toEqual({});
 	});
 
-	it("returns an object with string keys and values from a single array of strings", function() {
+	it("treats a single array of string values as if the strings are nested arrays", function() {
 		expect(_.object(["one", "two", "three", "four", "five"])).toEqual({ o: 'n', t: 'h', f: 'i' });
 	});
 
